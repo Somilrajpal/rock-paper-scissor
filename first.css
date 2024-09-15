@@ -1,0 +1,159 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+header{
+    color:white;
+    background-color: blue;
+    width:100vw;
+    height: 80px;
+    font-size: 35px;
+    position:absolute;
+    top: 0px;
+    margin: 0%;
+    text-align: center;
+}
+#game{
+    height: 180px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 120px;
+    left: 300px;
+}
+#rock{
+display: inline-block;
+    height: 150px;
+    width: 150px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%;
+    margin: 35px;
+    background-image: url(rock.jpg);
+    background-size: cover;
+}
+#paper{
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%;
+    margin: 35px;
+    background-image: url(paper.jpg);
+    background-size: cover;
+}
+#scissor{
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%;
+    margin: 35px;
+    background-image: url(scissors.jpg);
+    background-size: cover;
+}
+#text{
+    position: absolute;
+    top: 320px;
+    left :660px;
+}
+.choice:hover{
+opacity: 0.5;
+}
+#play{
+    background-color: black;
+    color: bisque;
+    text-align: center;
+    height:25px;
+    width:90px;
+    position: absolute;
+    top: 360px;
+    left: 710px;
+    border-radius: 20%;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+#infobox{
+text-decoration: underline;
+    height: 200px;
+    width: 100px;
+    background-color: rgb(255, 199, 108);
+    color: black;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    border-color: black ;
+    border-style: solid;
+    border-width: 2px;
+}
+#stat{
+    height: 150px;
+    width: 100px;
+    background-color: rgb(255, 199, 108);
+    color: black;
+    align-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+.blink{
+animation-name: blink;
+animation-iteration-count: infinite;
+animation-duration: 1s;
+}
+
+@keyframes blink{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 70%;
+    }
+    
+}
+#scorebox{
+    height: 104px;
+    width: 164px;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 400px;
+    left: 680px;
+}
+#user{
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    height: 50px;
+    width: 80px;
+    font-size: 30px;
+}
+#comp{
+    height: 50px;
+    width: 80px;
+    font-size: 30px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+.idx{
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    height: 50px;
+    width: 80px;
+    font-size: 30px;
+}
